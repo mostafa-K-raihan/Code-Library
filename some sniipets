@@ -1,0 +1,85 @@
+/*binary search*/
+
+int binary_search(int a[], int value, int low, int high){
+    if(low>high){
+        return -1;
+    }
+
+    int mid = (low+high)/2;
+
+    if(a[mid]==value){
+        return mid;
+    }else if(a[mid]>value){
+        binary_search(a,value,low,mid-1);
+    }else{
+        binary_search(a,value,mid+1,high);
+    }
+}
+
+/*gcd*/
+
+int gcd(int a,int b){
+  if(!b)return a;
+  return gcd(b,a%b); 
+}
+
+/*seive old fashion */
+
+char table [MAX];
+
+void seive (void){
+    int i,j;
+    int k =sqrt(MAX);
+
+    memset(table, 0, sizeof(table));
+    table[0]=table[1]=1;
+    for (i=2;i<=k;i++){
+        if(table[i]==0){
+            for(j=i+i;j<=MAX;j+=i){
+                table[j]=1;
+            }
+        }
+    }
+}
+
+
+/euler's phi */
+
+int phi(int n){
+    int result = n;
+    for(int i=2;i*i <= n;i++){
+        if (n % i == 0) result -= result / i;
+        while (n % i == 0) n /= i;
+    }
+    if (n > 1) result -= result / n;
+    return result;
+}
+
+
+/*bigmod*/
+
+long long bigmod(int b, int p, int m){
+    long long  a;
+    if (p == 0)return 1;
+    if (p%2 == 0){
+        a = bigmod(b,p/2,m);
+        return (a*a) % m;
+    }
+    else{
+        return ((b % m) * bigmod(b,p-1,m)) % m;
+    }
+}
+
+
+/*LCS*/
+
+int LCS(int x, int y){
+    if(x <= 0 || y <= 0)return 0;
+    if(dp[x][y]!=-1)return dp[x][y];
+    if(str1[x-1]==str2[y-1]){
+        dp[x][y] = (1+LCS(x-1,y-1));
+    }else {
+        dp[x][y] = max(LCS(x-1,y),LCS(x,y-1));
+    }
+    return dp[x][y];
+}
