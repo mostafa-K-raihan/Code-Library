@@ -1,0 +1,63 @@
+/*****************************************************************
+* author : run - time -error                                     *
+* algo used :                                                    *
+* run time :                                                     *
+* problem link :                                                 *
+*                                                                *
+******************************************************************/
+
+
+/*included files*/
+
+#include<iostream>
+#include<string>
+#include<fstream>
+#include<numeric>
+#include<bitset>
+#include<algorithm>
+#include<map>
+#include<list>
+#include<iterator>
+#include <set>
+#include<vector>
+#include<stack>
+#include<queue>
+#include<iomanip>
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+#include<math.h>
+#include<stdlib.h>
+#include<time.h>
+#include<memory.h>
+
+
+/*defines*/
+
+
+#define pi acos(-1.0)
+#define eps 1e-9
+#define lup1(i,a,b,c) for(i=a;i<b;i+=c)
+#define lup2(i,a,b,c) for(i=a;i<=b;i+=c)
+#define lup3(i,a,b,c) for(i=a;i>b;i-=c)
+#define lup4(i,a,b,c) for(i=a;i>=b;i-=c)
+#define max(a,b) ((a>b)?a:b)
+#define Max(a,b,c) max(max(a,b),c)
+#define min(a,b) ((a>b)?b:a)
+#define Min(a,b,c) min(min(a,b),c)
+#define clear(a) memset(a,0,sizeof(a))
+#define settrue(a) memset(a,true,sizeof(a))
+#define setfalse(a) memset(a,false,sizeof(a))
+#define open freopen("inp.txt","r",stdin)
+#define close freopen ("out.txt","w",stdout)
+#define Case(a) printf("Case %d: ",a)
+#define Case_h(a) printf("Case #%d: ",a)
+#define ll long long 
+#define ull unsigned long long 
+
+using namespace std;
+
+int main(){
+
+    return 0;
+}
