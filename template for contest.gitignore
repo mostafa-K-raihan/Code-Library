@@ -10,7 +10,7 @@
 
 
 /*included files*/
-
+/*
 #include<iostream>
 #include<string>
 #include<fstream>
@@ -25,6 +25,7 @@
 #include<stack>
 #include<queue>
 #include<iomanip>
+*/
 #include<stdio.h>
 #include<string.h>
 #include<ctype.h>
@@ -57,7 +58,7 @@
 #define ll long long 
 #define ull unsigned long long 
 
-using namespace std;
+/*using namespace std;*/
 
 int main(){
 
