@@ -10,7 +10,7 @@
 
 
 /*included files*/
-/*
+
 #include<iostream>
 #include<string>
 #include<fstream>
@@ -25,7 +25,7 @@
 #include<stack>
 #include<queue>
 #include<iomanip>
-*/
+
 #include<stdio.h>
 #include<string.h>
 #include<ctype.h>
@@ -40,8 +40,8 @@
 
 #define pi acos(-1.0)
 #define eps 1e-9
-#define rep(i,init,end) for(i=init;i<end;i++)
-#define per(i,init,end) for(i=init;i>end;i--)
+#define rep(i,init,end) for(int i=init;i<end;i++)
+#define per(i,init,end) for(int i=init;i>end;i--)
 #define si(t) scanf("%d",&t)
 #define sii(a,b) scanf("%d %d",&a,&b)
 #define sf(a) scanf("%lf",&a)
