@@ -83,3 +83,25 @@ int LCS(int x, int y){
     }
     return dp[x][y];
 }
+
+
+/*Union find some functions*/
+
+void make_parent(){
+    rep(i,0,n)parent[i] = i;
+}
+
+int find(int x){
+    if(parent[x]==x)return x;
+    return parent[x] = find(parent(x));
+}
+
+void Union(int x,int y){
+    int a,b;
+    a = find(x);
+    b = find(y);
+    if(a!=b){
+        parent[b] = a;
+    }
+}
+
