@@ -40,10 +40,12 @@
 
 #define pi acos(-1.0)
 #define eps 1e-9
-#define lup1(i,a,b,c) for(i=a;i<b;i+=c)
-#define lup2(i,a,b,c) for(i=a;i<=b;i+=c)
-#define lup3(i,a,b,c) for(i=a;i>b;i-=c)
-#define lup4(i,a,b,c) for(i=a;i>=b;i-=c)
+#define rep(i,init,end) for(i=init;i<end;i++)
+#define per(i,init,end) for(i=init;i>end;i--)
+#define si(t) scanf("%d",&t)
+#define sii(a,b) scanf("%d %d",&a,&b)
+#define sf(a) scanf("%lf",&a)
+#define sff(a,b) scanf("%lf %lf",&a,&b)
 #define max(a,b) ((a>b)?a:b)
 #define Max(a,b,c) max(max(a,b),c)
 #define min(a,b) ((a>b)?b:a)
