@@ -105,3 +105,7 @@ void Union(int x,int y){
     }
 }
 
+/*floyd_warhall*/
+void floyd_warshall(){
+    rep(k,0,n)rep(i,0,n)rep(j,0,n)dp[i][j]=min(dp[i][j],dp[i][k]+dp[k][j]);
+}
