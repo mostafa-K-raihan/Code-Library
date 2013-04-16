@@ -10,7 +10,7 @@
 
 
 /*included files*/
-/*
+
 #include<iostream>
 #include<string>
 #include<fstream>
@@ -25,7 +25,7 @@
 #include<stack>
 #include<queue>
 #include<iomanip>
-*/
+
 #include<stdio.h>
 #include<string.h>
 #include<ctype.h>
@@ -44,6 +44,7 @@
 #define per(i,init,end) for(i=init;i>end;i--)
 #define si(t) scanf("%d",&t)
 #define sii(a,b) scanf("%d %d",&a,&b)
+#define siii(a,b,c) scanf("%d %d %d",&a,&b,&c)
 #define sf(a) scanf("%lf",&a)
 #define sff(a,b) scanf("%lf %lf",&a,&b)
 #define max(a,b) ((a>b)?a:b)
