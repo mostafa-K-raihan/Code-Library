@@ -51,7 +51,7 @@
 #define Max(a,b,c) max(max(a,b),c)
 #define min(a,b) ((a>b)?b:a)
 #define Min(a,b,c) min(min(a,b),c)
-#define clear(a) memset(a,0,sizeof(a))
+#define Clear(a) memset(a,0,sizeof(a))
 #define settrue(a) memset(a,true,sizeof(a))
 #define setfalse(a) memset(a,false,sizeof(a))
 #define open freopen("inp.txt","r",stdin)
@@ -68,7 +68,7 @@
 #define mii map<int,int>m
 #define inf 0x7FFFFFFF
 
-/*using namespace std;*/
+using namespace std;
 
 int main(){
 
