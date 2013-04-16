@@ -59,6 +59,13 @@
 #define Case_h(a) printf("Case #%d: ",a)
 #define ll long long 
 #define ull unsigned long long 
+#define pb(x) push_back(x)
+#define ppb pop_back()
+#define p pop()
+#define ps(x) push(x)
+#define vi vector<int>v
+#define mii map<int,int>m
+#define inf 0x7FFFFFFF
 
 /*using namespace std;*/
 
